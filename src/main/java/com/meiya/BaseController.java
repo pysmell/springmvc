@@ -73,7 +73,7 @@ public class BaseController {
         user.setId(1);
         return user;
     }
- /*   @RequestMapping("saveData")  //先从model去找key为user的对象，如果能找到 并且重新set 会改变其属性值             三个user对象都一样  一个改变全部改变
+ /*   @RequestMapping("saveData")  //先从model去找key为user的对象，如果能找到属性值和找到的对象一样 如果重新set 会改变其找到对象的属性值             三个user对象都一样  一个改变全部改变
     public String save(@ModelAttribute User user) {
         user.setUserName("hello everyDay");
         user.setId(2);
